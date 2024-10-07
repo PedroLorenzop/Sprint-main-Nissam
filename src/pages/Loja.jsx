@@ -4,7 +4,7 @@ import ArrowChatButton from '../components/ArrowChatButton';
 // Importando as imagens
 import camisetaLoja from '../assets/Camiseta1.png';
 import ingressoLoja from '../assets/Ingresso Loja C.png';
-import boneLoja from '../assets/Bone.png';
+import boneLoja from '../assets/bone.png';
 import ps5Loja from '../assets/Ps5 Loja C.png';
 import caderno01 from '../assets/caderno01.png';
 import moedaIcon from '../assets/moeda-loja.png';
