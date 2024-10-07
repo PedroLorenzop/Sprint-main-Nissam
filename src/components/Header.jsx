@@ -18,7 +18,7 @@ export default function Header() {
                 to="/"
                 className="text-white no-underline text-sm px-4 py-2 font-unbounded hover:text-blue-500 transition-all ease-linear"
               >
-                Menu
+                Home
               </NavLink>
             </li>
             <li className="mb-2 md:mb-0 md:ml-5">

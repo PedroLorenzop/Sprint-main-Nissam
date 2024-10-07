@@ -52,6 +52,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center mt-4">
         <a href="#" className="learn-more text-yellow-500 text-xs sm:text-sm font-poppins">Saiba mais!</a>
+        <NavLink to="/Quiz" className="text-yellow-500 mt-2 text-xs sm:text-sm font-poppins text-center">Jogar Quiz</NavLink>
       </div>
     </div>
 

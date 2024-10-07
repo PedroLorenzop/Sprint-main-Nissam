@@ -10,6 +10,7 @@ import Double from './pages/Double';
 import Login from './pages/Login';
 import CarCustomization from './pages/CarCustomization';
 import Ranking from './pages/Ranking';
+import Quiz from './pages/quiz';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
       { path: 'double', element: <Double /> },
       { path: 'car', element: <CarCustomization /> }, // Nova rota para a customizar carro
       { path: 'ranking', element: <Ranking /> },
+      { path: 'quiz', element: <Quiz /> },
     ],
   },
 ]);
