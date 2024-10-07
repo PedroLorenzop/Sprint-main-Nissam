@@ -25,6 +25,7 @@ const router = createBrowserRouter([
       { path: 'car', element: <CarCustomization /> }, // Nova rota para a customizar carro
       { path: 'ranking', element: <Ranking /> },
       { path: 'quiz', element: <Quiz /> },
+
     ],
   },
 ]);
