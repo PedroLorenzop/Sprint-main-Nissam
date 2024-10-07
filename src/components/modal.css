@@ -1,0 +1,57 @@
+/* Estilos do modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  text-align: center;
+  z-index: 60;
+  color: black; /* Definindo a cor do texto como preto */
+}
+
+.modal-content h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: black; /* Garantindo que o título também fique preto */
+}
+
+.modal-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: black; /* Garantindo que o conteúdo do parágrafo fique preto */
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #ff1a1a;
+}

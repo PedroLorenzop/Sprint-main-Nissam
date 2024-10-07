@@ -1,0 +1,187 @@
+/* Contêiner principal do jogo Double com gradiente de fundo */
+.double-horizontal-game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #1e3a8a, #FFFF00); /* Azul do header para amarelo */
+  color: #f4f4f4; /* Texto branco */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para o título */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffffff; /* Texto branco */
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Flex container para saldo */
+.double-game-flex {
+  display: flex;
+}
+
+/* Estilo para o saldo do jogador */
+.double-game-saldo {
+  display: flex;
+  align-items: center;
+  background-color: #202020;
+  border: 1px solid gray;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+/* Botões de seleção de cores */
+.double-escolha-jogador {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.double-botao-escolha {
+  padding: 10px 30px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.double-botao-escolha:hover {
+  transform: scale(1.05);
+}
+
+.double-selecionado {
+  border: 2px solid yellow;
+}
+
+/* Botão de girar a roleta */
+.double-botao-girar {
+  padding: 12px 30px;
+  font-size: 1.3rem;
+  margin-top: 20px;
+  background-color: #1a2d50; /* Azul do header para o botão de girar */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.double-botao-girar:hover {
+  background-color: #1a2d50; /* Efeito hover no botão */
+}
+
+/* Input de aposta */
+.double-apostar {
+  margin-bottom: 20px;
+}
+
+.double-apostar input {
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100px;
+  color: black; /* Texto preto */
+  background-color: white; /* Fundo branco */
+}
+
+/* Contêiner dos quadrados da roleta */
+.double-quadrados-cores {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 150px;
+  overflow: hidden;
+  margin-top: 30px;
+  border: 3px solid #FFD700; /* Borda amarela */
+  border-radius: 10px; /* Arredondando bordas do contêiner */
+  background-color: #333333; /* Cor de fundo por trás dos quadrados */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .double-quadrados-cores {
+    height: 100px;
+  }
+}
+
+.double-container-animacao {
+  display: flex;
+  transition: transform 5s ease-out;
+}
+
+.double-quadrado {
+  width: 200px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-right: 2px solid #333; /* Separação entre os quadrados */
+}
+
+/* Ajustes para a altura dos quadrados em dispositivos móveis */
+@media (max-width: 768px) {
+  .double-quadrado {
+    height: 100px;
+    width: 150px;
+    font-size: 1.4rem;
+  }
+}
+
+/* Mantendo as cores da roleta (Preto, Vermelho, Branco) */
+.double-quadrado.double-vermelho {
+  background-color: red;
+  color: white;
+}
+
+.double-quadrado.double-preto {
+  background-color: black;
+  color: white;
+}
+
+.double-quadrado.double-branco {
+  background-color: white;
+  color: black;
+}
+
+/* Linha central que indica o resultado */
+.double-linha-central {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  background-color: yellow;
+  z-index: 10;
+}
+
+/* Estilo para o texto do resultado */
+h2 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  color: #ffd700; /* Texto em amarelo dourado */
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
